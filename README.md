@@ -1,2 +1,2 @@
 # Meus Projetos-Testes
- Criando meu primeiro repositório no GitHub Desktop, apoiado pelo canal CursoEmVídeo.
+ Criando meu primeiro repositório no GitHub Desktop, baseado pelo canal CursoEmVídeo.
