@@ -1,0 +1,181 @@
+@charset 'UTF-8';
+
+*{
+    padding: auto;
+    margin: 0%;
+}
+
+:root{
+    --corbordataela: #6F319E;
+    --corborda2: #6f319e98;
+    --corletra1: #6c07ac;
+    --corletra2: #B20C7E;
+    --corfundocabeçalho: #DCADE1;
+}
+
+@font-face {
+    font-family: 'fonte-titulo';
+    src: url('../recursos/fonts/fonte-titulo.otf');
+}
+
+header, footer, img{
+    transition: 1s;
+}
+
+header, footer{
+    text-align: center;
+    font: normal bold 2.8em 'fonte-titulo';
+    padding: 10vh 0vh;
+    background: rgba(0, 0, 0, 0.164);
+}
+
+.box-inlinelevel{
+    display: inline-block;
+}
+
+header > img{
+    width: 2.5em;
+    height: 2.5em;
+}
+
+#estilo-titulo-span1{
+    color: var(--corletra1);
+    font-weight: lighter;
+}
+
+#estilo-titulo-span2{
+    color: var(--corletra2);
+}
+
+/* Método para deixar a tabela Responsiva */
+table{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    overflow: hidden; /* Esconde o conteúdo que não cabe */
+    text-overflow: ellipsis; /* Adiciona reticências ao conteúdo que não cabe */
+    white-space: nowrap; /* Impede a quebra de linha dentro da célula */           
+}
+
+caption, thead{
+    background:#DCADE1;
+    font: normal bold 1.6em 'fonte-titulo';
+    color: var(--corletra1);
+}
+
+td:nth-child(odd){
+    font: normal normal 1em 'fonte-titulo';
+    color: var(--corletra1);
+    text-align: justify;
+    padding: 4px 10px;
+}
+
+td:nth-child(even){
+    font: normal normal 1em 'fonte-titulo';
+    color: var(--corletra2);
+    text-align: center;
+}
+
+table,tr,th,td{
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
+    border-bottom: 0.5px solid white;
+    margin: auto;
+    max-width: 750px;
+}
+
+.estilo-especifico-th, caption{
+    font: normal normal 0.8em 'fonte-titulo';
+    padding: 8px 1px;
+}
+
+thead{
+    border-top: 5px solid var(--corbordataela);
+}
+
+table{
+    border-bottom: 5px solid var(--corbordataela);
+}
+
+details{
+    background: #CB97E7;
+    max-width: 500px;
+    text-align: center;
+    padding: 4vh 1vh;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid var(--corborda2);
+    font: normal normal 2em 'fonte-titulo';
+    max-width: 735px;
+    color: var(--corletra1);
+}
+
+details > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.322);
+}
+
+#estilo-download{
+    font-size: 5vh;
+    text-align: right;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#estilo-download:hover{
+    color: var(--corletra2);
+    text-decoration: underline;
+}
+
+#estilo-download:visited{
+    color: var(--corletra1);
+}
+
+
+thead > tr > th{
+    position: sticky;
+    top: 0;
+    background: var(--corfundocabeçalho);
+}
+
+#estiloperfil{
+    max-width: 5em;
+    border-radius: 150px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
+    transition: 1s;
+}
+
+figcaption{
+    color: rgba(0, 0, 0, 0.61);
+    font: normal normal 5vh 'Serif';
+}
+
+
+@media (max-width: 750px){
+
+    header, footer{
+        text-align: center;
+        font: normal bold 1.8em 'fonte-titulo';
+        padding: 10vh 10vh;
+        background: rgba(0, 0, 0, 0.164);
+        transition: 1s;
+    }
+    img{
+        width: 28vw;
+        height: 28vw;
+        transition: 1s;
+
+    }
+    details{
+        font-size: 5vw;
+        transition: 1s;
+    }
+
+    
+
+}
