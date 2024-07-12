@@ -13,6 +13,3 @@ Olá, meu nome é *Paulo Sérgio* e estou criando meu primeiro repositório no G
     * **Impostos**;
     * **Estratégias de Marketing**;    
 4. Gimp;
-   
-
-
