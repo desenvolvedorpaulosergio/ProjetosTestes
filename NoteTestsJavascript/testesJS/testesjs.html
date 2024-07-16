@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando elementos no JavaScript de maneira completa e prática</title>
+    <style>
+        .caixa-de-execucao{
+            width: 500px;
+            height: 300px;
+            overflow-y: auto;
+            display: inline-block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Desafios Lógicos Complexos em JavaScript:</h1>
+    <p>Os desafios a seguir podem serem desafiadores na qual irá racha sua cuca. Desafio a resolver sozinho antes de visualizar a resposta.</p>
+
+    <details><summary>Desafio 1</summary>
+        <p>
+            <i>
+                Crie um código em JavaScript na qual aprensente uma sequência de 1 a 100 em que <b>a cada</b> 5 linhas de execução apareça uma linha que separa entre números. 
+                Lembre-se que <b>para cada número</b> é necessário indicar pela mensagem "O n°X é par/impar.". Obs.: tente resumir o número de linhas de código o possível de 
+                forma que não fique tão junto.
+            </i>
+        </p>
+        <div class="caixa-de-execucao">
+        <script>
+            for(let count = 1; count <= 100; count ++){
+                if(count % 2 === 0){
+                    document.write(`O n°${count} é par.<br>`);
+                }else{
+                    document.write(`O n°${count} é impar.<br>`);
+                }if(count % 5 === 0){
+                    document.write('<hr>');
+                }
+            }
+        </script>
+        </div>
+        <details class="caixa-de-execucao"><summary>Resposta</summary>
+            <img src="../testesJS/desafio1.jpg" alt="desafio 1">
+        </details>
+    </details>
+
+    <details><summary>Desafio 2</summary>
+        <p>
+         <i>
+             
+         </i>
+        </p>
+        <div class="caixa-de-execucao">
+            <script>
+                
+            </script>
+        </div>
+        <details class="caixa-de-execucao"><summary>Resposta</summary>
+            <p>
+                <i>
+                    Crie um código em JavaScript que apresente os resultados abaixo de um número fornecido por meio de uma caixa de entrada no prompt. Sendo: <br>
+                    sucessor, antecessor, Seu valor ao quadrado/cubo, 
+                </i>
+            </p>
+            <img src="" alt="desafio 1">
+        </details>
+    </details>
+
+</body>
+</html>
