@@ -57,7 +57,7 @@
 #estilo-botao{
     width: 250px;
     height: 50px;
-    font: normal normal 4vh 'font-titulo';   
+    font: normal normal 3vw 'font-titulo';   
     color: rgba(0, 0, 255, 0.52);
     transition: 0.2s;
 }
