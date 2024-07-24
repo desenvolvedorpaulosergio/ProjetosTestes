@@ -1,18 +1,16 @@
 document.addEventListener('DOMContentLoaded', function(){
-    let horas = new Date().getHours()
     let horario = new Date().getHours()
     let minuto = new Date().getMinutes()
     window.document.getElementById('horario').innerHTML = `${horario + ":" + minuto}`
-    horas = 1
-    if(horas >= 0 && horas <= 12){
+    if(horario >= 0 && horario <= 12){
         window.document.getElementsByTagName('body')[0].style.background = '#00b01a84'
         window.document.getElementsByTagName('div')[0].style.background = '#006c10'
         window.document.getElementById('paisagem').src = '../recursos/imgs/paisagem-manha.jpg';
-    }else if(horas > 12 && horas <= 18){
+    }else if(horario >= 13 && horario <= 17){
         window.document.getElementsByTagName('body')[0].style.background = '#C48E59'
         window.document.getElementsByTagName('div')[0].style.background = '#CE0000'
         window.document.getElementById('paisagem').src = '../recursos/imgs/paisagem-tarde.jpg';
-    }else{
+    }else if(horario >= 18 && horario <= 24){
         window.document.getElementsByTagName('body')[0].style.background = '#001964'
         window.document.getElementsByTagName('div')[0].style.background = '#255EAC'
         window.document.getElementById('paisagem').src = '../recursos/imgs/paisagem-noite.jpg';
@@ -33,6 +31,6 @@ function enviarform(){
                 "<span id="estilo-borrado">${senha}</span>". Seu sexo é ${sexo} com um tipo de nacionalidade ${paisorigem}
              </div>.`;
     }else{
-        window.document.getElementById('resposta').innerHTML = `Responda o formulário corretamente`
+        window.alert(`Responda o formulário corretamente`)
     }
 }
