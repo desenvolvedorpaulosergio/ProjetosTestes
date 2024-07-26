@@ -1,41 +1,45 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testando Estilo Media Querie</title>
-    <style>
-        @media screen and (orientation: portrait) {
-    body {
-        background-image: url('cev-portrait.jpg');
-        background-color: #233EFF;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center center;
-        max-width: 98%;
-        height: 96vh;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testando Estilo Media Querie</title>
+<!-- <link rel="stylesheet" href="stylePortrait.css" media="screen and (orientation: portrait)">  -->
+<!-- <link rel="stylesheet" href="styleLandscape.css" media="screen and (orientation: landscape)"> -->
+<style>
+
+    @media all{
+        body{
+            background-color: #233EFF;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 98%;
+            height: 96vh;
+        }
     }
 
-    body::after{
-        content: 'Tela em Pé';
+    @media screen and (orientation: portrait) {
+        body {
+            background-image: url('cev-portrait.jpg');
+            background-position: center center;
+        }
+
+        body::after{
+            content: 'Tela em Pé';
+        }
     }
 
-}
-        @media screen and (orientation: landscape) {
-    body{
-        background: #233EFF url('cev-landscape.jpg') right bottom no-repeat;
-        background-size: contain;
-        width: 98%;
-        height: 96vh;
-        content: 'Tela deitada';
+    @media screen and (orientation: landscape) {
+        body{
+            background-image: url('cev-landscape.jpg');
+            background-position: right bottom;
+            content: 'Tela deitada';
     }
 
-    body::after{
-        content: 'Tela deitada';
+        body::after{
+            content: 'Tela deitada';
     } 
 }
-    </style>
+</style>
 </head>
 <body>
+
 </body>
 </html>
