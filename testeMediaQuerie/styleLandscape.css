@@ -5,3 +5,7 @@ body{
     height: 97.5vh;
     content: 'Tela deitada';
 }
+
+body::after{
+    content: 'Tela deitada';
+}
