@@ -23,6 +23,8 @@
 body{
     max-width: 100%;
     background-color: var(--corfundobody);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 main{
@@ -43,6 +45,38 @@ h1{
 }
 
 p{
-    font: normal normal 1.5em 'font';
+    font: normal normal 1.5em 'fonte-texto';
     color: white;
+    text-align: center;
+}
+
+div{
+    max-width: 300px;
+    height: 150px;
+    background: no-repeat;
+    background-position: center center;
+}
+
+#estilo-tela1{
+    background-image: url('../recursos/imgs/icon-phone.png');
+    display: none;
+}
+
+#estilo-tela2{
+    background-image: url('../recursos/imgs/icon-tablet.png');
+    display: none;
+}
+#estilo-tela3{
+    background-image: url('../recursos/imgs/icon-pc.png');
+    display: none;
+}
+
+#estilo-tela4{
+    background-image: url('../recursos/imgs/icon-tv.png');
+    display: none;
+}
+
+#estilo-tela4{
+    background-image: url('../recursos/imgs/icon-print.png');
+    display: none;
 }
