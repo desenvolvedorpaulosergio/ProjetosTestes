@@ -1,5 +1,44 @@
 @charset 'UTF-8';
 
-@media screen and (min-width: ) and (max-width: ){
-    
+/* tela celular */
+@media screen and (max-width: 660px){
+    body{
+        background-image: url(../recursos/imgs/back-phone.jpg);
+    }
+
+    #estilo-tela1{
+        display: block;
+    }
+
+    p::after{
+        content: 'Tela de Celular';
+    }
+}
+
+@media screen and (min-width: 661px) and (max-width: 992px){
+    body{
+        background-image: url(../recursos/imgs/back-tablet.jpg);
+    }
+
+    #estilo-tela2{
+        display: block;
+    }
+
+    p::after{
+        content: 'Tela de Tablet';
+    }
+}
+
+@media screen and (min-width: 993) and (max-width: 1200px){
+    body{
+        background-image: url(../recursos/imgs/back-tablet.jpg);
+    }
+
+    #estilo-tela2{
+        display: block;
+    }
+
+    p::after{
+        content: 'Tela de Desktop';
+    }
 }
