@@ -1,0 +1,48 @@
+@charset 'utf-8';
+
+*{
+    margin: auto;
+    padding: 0%;
+}
+
+@font-face {
+    font-family: 'fonte-titulo';
+    src: url('../recursos/fonts/fonte-titulo\ \(2\).otf');
+}
+
+@font-face {
+    font-family:'fonte-texto';
+    src: url('../recursos/fonts/fonte-texto.otf');
+}
+
+:root{
+    --corfundobody: #265D7D;
+    --corfundomain: #b6e4ff65;
+}
+
+body{
+    max-width: 100%;
+    background-color: var(--corfundobody);
+}
+
+main{
+    background: blue;
+    margin: 30px auto;
+    max-width: 100vh;
+    background-color: var(--corfundomain);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #00000085;
+    padding: 15px;
+}
+
+h1{
+    font: bold normal 5vh 'fonte-titulo';
+    color: rgba(255, 255, 255, 0.89);
+    text-align: center;
+    filter: drop-shadow(2px 2px 1px #00000063);
+}
+
+p{
+    font: normal normal 1.5em 'font';
+    color: white;
+}
