@@ -27,12 +27,14 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
 main{
     background: blue;
     margin: 30px auto;
     max-width: 100vh;
+    text-align: center;
     background-color: var(--corfundomain);
     border-radius: 20px;
     box-shadow: 5px 5px 5px #00000085;

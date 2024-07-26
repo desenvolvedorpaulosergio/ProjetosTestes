@@ -1,0 +1,14 @@
+@charset 'UTF-8';
+
+p::after{
+    content: 'Dela de Impressão-PDF';
+}
+
+main{
+    border: 2px solid black;
+}
+
+#estilo-tela5{
+    background-image: url('../recursos/imgs/icon-print.png');
+    display: block;
+}

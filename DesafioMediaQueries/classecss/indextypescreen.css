@@ -1,7 +1,8 @@
 @charset 'UTF-8';
 
 /* tela celular */
-@media screen and (max-width: 660px){
+
+ @media screen and (max-width: 660px){
     body{
         background-image: url(../recursos/imgs/back-phone.jpg);
     }
@@ -29,16 +30,35 @@
     }
 }
 
-@media screen and (min-width: 993) and (max-width: 1200px){
+@media screen and (min-width: 993px) and (max-width: 1300px){
     body{
-        background-image: url(../recursos/imgs/back-tablet.jpg);
+        background-image: url(../recursos/imgs/back-pc.jpg);
     }
 
-    #estilo-tela2{
+    #estilo-tela3{
         display: block;
     }
 
     p::after{
         content: 'Tela de Desktop';
+    }
+}
+
+
+@media screen and (min-width: 1301px){
+    body{
+        background-image: url(../recursos/imgs/back-tv.jpg);
+    }
+
+    #estilo-tela4{
+        display: block;
+    }
+
+    p{
+        color: #0000007e;
+    }
+
+    p::after{
+        content: 'Tela de Televisão';
     }
 }
