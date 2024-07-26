@@ -3,8 +3,17 @@
 <title>Testando Estilo Media Querie</title>
 <!-- <link rel="stylesheet" href="stylePortrait.css" media="screen and (orientation: portrait)">  -->
 <!-- <link rel="stylesheet" href="styleLandscape.css" media="screen and (orientation: landscape)"> -->
-<style>
 
+<style>
+/* 
+Typical Device Breakpoints: são larguras comuns de telas de dispositivos. 
+Dados de acordo com a W3C (Prganização do consórcio)
+Pequenas Telas: até 600px;
+Celular: de 600px até 768px;
+Tablet: 768px até 992;
+Desktop: 992px até 1200px;
+Grandes telas: Acima de 1200px;
+*/
     @media all{
         body{
             background-color: #233EFF;
@@ -37,6 +46,10 @@
             content: 'Tela deitada';
     } 
 }
+
+    @media screen and (min-width: 20px) and (max-width: 100px){
+        
+    }
 </style>
 </head>
 <body>
