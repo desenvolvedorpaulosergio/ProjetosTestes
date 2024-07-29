@@ -14,7 +14,7 @@ main{
     left: 50%;
     transform: translate(-50%, 10%);
     width: 320px;
-    height: 80vh;
+    height: 90vh;
 
     background: #ffffff;
     border-radius: 10px;
@@ -36,7 +36,7 @@ main{
 
 form{
     max-width: 90%;
-    height: 100%;
+    height: 80%;
 }
 
 h1,legend{
@@ -46,7 +46,7 @@ h1,legend{
 }
 
 p{
-    font: italic normal 20px 'arial';
+    font: italic normal 12px 'arial';
     text-align: justify;
     text-indent: 20px;
 }
@@ -121,7 +121,9 @@ button{
 @media screen and (min-width: 760px) and (max-width: 950px){
     main{
         width: 750px;
+        height: 80vh;
     }
+
     h1, legend{
         font-size: 2em;
     }
@@ -153,6 +155,22 @@ button{
         left: 33%;
         float: right;
         width: 600px;
+    }
+    h1, legend{
+        font-size: 32px;
+    }
+    input{
+        width: 60%;
+        padding: 10px;
+    }
+    label{
+        padding: 10px 1px 11px 0px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-height: 602px){
+    main{
         overflow-y: auto;
     }
 }
