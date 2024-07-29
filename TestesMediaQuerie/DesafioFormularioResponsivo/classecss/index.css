@@ -19,6 +19,7 @@ main{
     background: #ffffff;
     border-radius: 10px;
     overflow: hidden;
+    transition: 0.4s;
 }
 
 #estilo-img-fundo{
@@ -30,9 +31,103 @@ main{
 }
 
 form{
-    padding: 10px;
+    padding: 1px;
 }
 
 #estilo-img-fundo:hover{
     transform: scale(1.1);
+}
+
+legend, input, label, form{
+    font: normal normal 2vh 'georgia';
+    color: #3f578d;
+}
+
+fieldset{
+    width: 80%;
+    border-radius: 10px;
+}
+
+input, textarea, select, button{
+    border: 2px solid #0341599f;
+    background-color: #e4e7fa6c;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+form{
+    text-align: center;
+}
+
+button{
+    font: bold normal 3vh 'arial';
+    padding: 2px;
+    color: #3f568d88;
+    transition: 0.5s;
+}
+
+button:hover{
+    background: #3f568d88;
+}
+
+button:active{
+    background: #3f578d;
+}
+
+@media screen and (min-width: 760px) and (max-width: 950px){
+    main{
+        width: 750px;
+    }
+    legend{
+        font-size: 4vh;
+    }
+    input, textarea, select, button{
+        font-size: 20px;
+    }
+    label, form{
+        font-size: 20px;
+    }
+    #profissao{
+        width: 120px;
+    }
+    textarea{
+        height: 80px;
+    }
+}
+
+@media screen and (min-width: 951px){
+    main{
+        width: 940px;
+    }
+
+    #estilo-img-fundo{
+        width: 30%;
+        float: left;
+        height: 100%;
+    }
+
+    form{
+        position: absolute;
+        top: 10%;
+        left: 33%;
+        float: right;
+        width: 600px;
+        height: 100%;
+    }
+
+    legend{
+        font-size: 4vh;
+    }
+    input, textarea, select, button{
+        font-size: 20px;
+    }
+    label, form{
+        font-size: 20px;
+    }
+    #profissao{
+        width: 120px;
+    }
+    textarea{
+        height: 80px;
+    }
 }
