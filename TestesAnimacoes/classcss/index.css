@@ -1,0 +1,16 @@
+
+@keyframes variavel {
+    0% {
+        rotate: 180deg;
+      }
+      100% {
+        background: red;
+      }
+}
+
+#estiloteste1{
+    background: blueviolet;
+    animation: variavel 4s ease-in-out 5s infinite alternate forwards running;
+    width: 200px;
+    height: 200px;
+}
