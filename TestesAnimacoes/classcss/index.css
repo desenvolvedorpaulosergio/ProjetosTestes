@@ -12,12 +12,138 @@ body{
 
 @keyframes animacaoLinear{
     to{
-        transform: translateX(70vw);
+        transform: translateX(60vw);
+    }
+}
+
+@keyframes animacaoEaseIn{
+    to{
+        transform: translateX(60vw);
+    }
+}
+
+@keyframes animacaoEase{
+    to{
+        transform: translateX(60vw);
+    }
+}
+
+@keyframes animacaoEaseOut{
+    to{
+        transform: translateX(60vw);
+    }
+}
+
+@keyframes animacaoNormal{
+    to{
+        transform: translateX(60vw);
+    }
+}
+
+@keyframes animacaoReverse{
+    to{
+        transform: translateX(60vw);
+    }
+}
+
+@keyframes animacaoAlternate{
+    to{
+        transform: translateX(60vw);
+    }
+}
+
+@keyframes animacaoAlternateReverse{
+    to{
+        transform: translateX(60vw);
+    }
+}
+
+@keyframes animacaoNone{
+    to{
+        transform: translateX(60vw);
+    }
+}
+
+@keyframes animacaoForwards{
+    from{
+        background: blue;
+    }
+    to{
+        transform: translateX(60vw);
+        background: red;
+    }
+}
+
+@keyframes animacaoBackwards{
+    from{
+        background: blue;
+    }
+    to{
+        transform: translateX(60vw);
+        background: red;
+    }
+}
+
+@keyframes animacaoBoth{
+    from{
+        background: blue;
+    }
+    to{
+        transform: translateX(60vw);
+        background: red;
     }
 }
 
 #animacaoLinear{
-    animation: animacaoLinear 2s infinite linear;
+    animation: animacaoLinear 3s infinite linear;
+}
+
+#animacaoEase{
+    animation: animacaoEase 3s infinite ease;
+}
+
+#animacaoEaseIn{
+    animation: animacaoEase 3s infinite ease-in;
+}
+
+#animacaoEaseOut{
+    animation: animacaoEase 3s infinite;
+}
+
+#animacaoNormal{
+    animation: animacaoNormal 3s infinite normal;
+}
+
+#animacaoReverse{
+    animation: animacaoReverse 3s infinite reverse;
+}
+
+#animacaoReverse{
+    animation: animacaoReverse 3s infinite reverse;
+}
+
+#animacaoAlternate{
+    animation: animacaoAlternate 3s infinite alternate;
+}
+
+#animacaoAlternateReverse{
+    animation: animacaoAlternateReverse 3s infinite alternate-reverse;
+}
+
+#animacaoNone{
+    animation: animacaoNone 3s none;
+}
+
+#animacaoForwards{
+    animation: animacaoForwards 3s  forwards;
+}
+
+#animacaoBackwards{
+    animation: animacaoBackwards 3s backwards;
+}
+
+#animacaoBoth{
+    animation: animacaoBoth 3s both;
 }
 
 

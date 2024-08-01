@@ -9,10 +9,61 @@
 <body>
     <h1>Propriedades das Animations</h1>
         
-        <details><summary>Valores da propriedade: "<ins>animation-timing-function</ins>"</summary>
+        <details><summary>Valores Clássicos da Propriedade: "<ins>animation-timing-function</ins>";</summary>
+            <fieldset><legend>linear: mantém a velocidade constante</legend>
+                <div class="estiloAnimation" id="animacaoLinear"></div>
+            </fieldset>
+            <fieldset><legend>ease:começa devagar, acelera no meio e desacelera no fim.</legend>
+                <div class="estiloAnimation" id="animacaoEase"></div>
+            </fieldset>
+            <fieldset><legend>ease-in: Começa devagar e acelera até o fim.</legend>
+                <div class="estiloAnimation" id="animacaoEaseIn"></div>
+            </fieldset>
+            <fieldset><legend>ease-out: Começa rápido e desacelera até o fim</legend>
+                <div class="estiloAnimation" id="animacaoEaseOut"></div>
+            </fieldset>
         </details>
-        <fieldset><legend>linear: mantém a velocidade constante</legend>
-            <div class="estiloAnimation" id="animacaoLinear"></div>
+        <details><summary>Valores Clássicos da Propriedade: "<ins>animation-timing-function</ins>";</summary>
+            <fieldset><legend>linear: mantém a velocidade constante</legend>
+            </fieldset>
+        </details>
+
+        <details><summary>Valores Clássicos da Propriedade: "<ins>animation-direction</ins>";</summary></fieldset>
+        <fieldset><legend>normal: configuração normal</legend>
+            <div class="estiloAnimation" id="animacaoEaseOut"></div>
         </fieldset>
+    
+        <fieldset><legend>reverse: começa a partir do fim ao início</legend>
+            <div class="estiloAnimation" id="animacaoReverse"></div>
+        </fieldset>
+    
+        <fieldset><legend>alternate: repete o ciclo da animação</legend>
+            <div class="estiloAnimation" id="animacaoAlternate"></div>
+        </fieldset>
+    
+        <fieldset><legend>alternate-reverse: começa apartir do fim e repete o ciclo da volta</legend>
+            <div class="estiloAnimation" id="animacaoAlternateReverse"></div>
+        </fieldset>
+    </details>
+
+        <details><summary>Valores Clássicos da Propriedade: "<ins>animation-fill-mode</ins>";</summary>
+            <fieldset><legend>none: nenhum estilo é configurado no final da animação</legend>
+                <div class="estiloAnimation" id="animacaoNone"></div>
+            </fieldset>
+            
+            <fieldset><legend>forwards: estilizará o elemento de acordo com o estado final da animação</legend>
+                <div class="estiloAnimation" id="animacaoForwards"></div>
+            </fieldset>
+        
+            <fieldset><legend>backwards: estilizará o elemento de acordo com o estado inicial da animação</legend>
+                <div class="estiloAnimation" id="animacaoBackwards"></div>
+            </fieldset>
+        
+            <fieldset><legend>both: combina o forwards e o backwards</legend>
+                <div class="estiloAnimation" id="animacaoBoth"></div>
+            </fieldset>
+    </details>
+
+
 </body>
 </html>
