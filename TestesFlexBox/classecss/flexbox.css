@@ -53,6 +53,7 @@
 
 .Pai{
     display: flex;
+    justify-content: center;
     background: black;
     height: 150px;
 
