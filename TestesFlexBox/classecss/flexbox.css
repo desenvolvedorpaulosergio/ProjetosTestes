@@ -68,6 +68,22 @@
     padding: 20px 10px; 
 }
 
+.Container-Pai2{
+    background: red;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 30px 0px;
+}
+
+.Container-Pai2 > div{
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+    flex: auto;
+}
+
 #pai1{
     align-items: center;
 }
@@ -79,3 +95,4 @@
 #pai3{
     align-items: flex-end;
 }
+
