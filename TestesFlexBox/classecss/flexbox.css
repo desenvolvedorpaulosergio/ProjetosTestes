@@ -69,19 +69,20 @@
 }
 
 .Container-Pai2{
-    background: red;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    padding: 30px 0px;
+    flex-flow: row wrap-reverse;
+    background: red;
+    height: 400px;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 
 .Container-Pai2 > div{
     border: 2px solid black;
     border-radius: 10px;
     text-align: center;
-    padding: 30px;
-    flex: auto;
+    padding: 40px;
+    height: 40px;
 }
 
 #pai1{
