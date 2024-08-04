@@ -110,3 +110,20 @@
     border: 2px solid black;
     padding: 40px;
 }
+
+
+#teste-pai-flex-basis{
+    height: 400px;
+    background: pink;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+#teste-pai-flex-basis > div{
+    flex-basis: 90px;
+    border: 2px solid black;
+    padding: 40px;
+}
+
+
