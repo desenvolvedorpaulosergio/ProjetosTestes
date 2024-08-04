@@ -97,3 +97,16 @@
     align-items: flex-end;
 }
 
+#teste-pai-align-self{
+    height: 400px;
+    background: pink;
+    border: 2px solid black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start; /*permite que o height dos elementos-filhos não grudem no height do elemento pai*/
+}
+#teste-pai-align-self > div{
+    border: 2px solid black;
+    padding: 40px;
+}
