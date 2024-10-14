@@ -83,11 +83,21 @@
             
             <br>
             <br>
+            <hr>
 
             <h1>Variável global e local</h1>
             <ul class="modelo-lista-indicador">
                 <li><b><dfn>Variável Global</dfn></b>: variável acessível em qualquer parte do código, sendo qualquer variável declarada fora de uma função ou bloco é global. Risco: colisão de nomes</li>
                 <li><b><dfn>Variável Local</dfn></b>: variável acessível apenas dentro do escobo que foi declarada como bloco ou função. Fornece mais segurança são aqueles declarados com o let ou const.</li>
+            </ul>
+
+            <hr>
+            <br>
+
+            <h1>Variável Simples e Composta:</h1>
+            <ul class="modelo-lista-indicador">
+                <li><b>Variável Simples</b>: variável que armazena 1 valor por vez. Ex.: <code>let nome = "Paulo"</code></li>
+                <li><b>Variável Composta:</b> variável que armazena vários valores de uma vez. Ex.: <code>let person = {name: "João", age: 30};</code></li>
             </ul>
             </section>
         </details>
@@ -159,6 +169,17 @@
                 <li><a href="https://www.youtube.com/watch?v=JbGf_hd6g_Q" target="_blank">Acesse esse link para uma explicação melhor.</a></li>
             </ul>
 
+            <br>
+
+            <h1>Operador Ternário: </h1>
+            <ul class="modelo-lista-indicador">
+                <li>Operador Ternário é uma forma compacta de expressar uma condição if...else em uma única linha. Estruturado por: <br>
+                    <code>condição <b>?</b> valor_se_verdadeiro <b>:</b> valor_se_falso</code>. Exemplo: <br> <code>
+                        let status = (idade >= 18) ? "Maior de idade" : "Menor de idade"; //output: se idade for igual a 15, o resultado seria "Menor de Idade".
+                    </code>
+                </li>
+            </ul>
+
             </section>
         </details>
 
@@ -168,21 +189,219 @@
             <section>
                 <ul class="modelo-lista-indicador">
                     <li><code><b>Number.parseInt(variávelX)</b></code>: Irá converter os valores inteiros em números inteiros; <code>var variavelX = Number.parseInt(variavelY)</code>;</li>
+                    <br>
                     <li><code><b>Number.parseFloat(variávelX)</b></code>: Irá converter os valores em um número de casa decimal; <code>var variavelX = Number.parseFloat(variavelY)</code>;</li>
+                    <br>
                     <li><code><b>Number(variávelX)</b></code>: Modo mais simplificado de conversão de números. <code>var número = Number(n)</code>;</li>
+                    <br>
                     <li><code><b>String(variávelX) ou n.toString()</b></code>: Irá converter os número em String. Ex.: 2 em "2";</li>
+                    <br>
                     <li><code><b>variavelX.length</b></code>: Irá contar a quantidade de caracteres de uma String.</li>
+                    <br>
                     <li><code><b>variavelX.toUpperCase || variavelX.toLowerCase()</b></code>: Transforma os textos de maneira maiúscula e minúscula, respectivamente.</li>
+                    <br>
                     <li><code><b>variavelX.toFixed(n_casas decimais)</b></code>: apresentará um número com suas casas decimais. Ex.: </li>
+                    <br>
+                    <li><code><b>variavelX.replace('substituir', 'por')</b></code>: substituirá os valores de acordo com os parâmetros da função. </li>
+                    <br>
+                    <li><code><b>text.trim();</b></code>: Remove espaços em branco do início e do fim de uma string. </li>
+                    <br>
+                    <li><code><b>variávelArrayX.sort((a, b) => a - b) ou variavelX.sort()</b></code>Organiza os dados de um Array na ordem crescente.</li>
+                    <br>
+                    <li><code><b>variávelArrayX.sort((a, b) => b - a)</b></code>Organiza os dados de um Array na ordem decrescente.</li>
+                    <br>
+                    <li><code><b>variávelArrayX.push(valor)</b></code>Irá atribuir um valor no Array no final. Ex.: nomes.push("Ana")</li>
+                    <br>
+                    <li><code><b>variávelArrayX.reverse(): </b></code>Irá inverter a ordem das posições dos elementos do Array (não irá organizar de forma crescente ou decrescente)</li>
+                    <br>
+                    <li><code><b>variávelArrayX.pop() </b></code>: Irá remover o ultimo elemento do Array</li>
+                    <br>
+                    <li><code><b>Math.max(...variávelArrayX) e Math.min(...variávelArrayX)</b></code>: Apresentará o maior e o menor valor de um Array, respectivamente.</li>
+                    <br>
+                    <li><code><b>variávelArrayX.reduce((a, b) => a+b)/variavelX.length</b></code>: Apresentará a média do Array. Obs.: a e b são só parâmetros</li>
+                    <br>
+                    <li><code><b>variávelArrayX.indexOf(valorY) </b></code>: Irá retornar os números das chaves do Array onde se encontra. <code>Ex.:     var idades = [2,4,6,8]
+                        alert(idades.indexOf(8))//Se tiver a chave do 7 irá retornar o valor dele, caso contrário, irá retornar "<b>-1</b>"</code> <br>
+                        Para o JavaScript, o "–1" significa que ele pesquisou dentro do vetor e não encontrou nenhuma ocorrência.
+                    </li>
+                </ul>
+
+            </section>
+        </details>
+
+        <br>
+
+        <details><summary>Métodos de Captura e Inserção de dados <abbr title="Document Object Model">DOM</abbr></summary>
+            <section>
+                <h1>Métodos de Captura de Dados DOM</h1>
+                Observação: <code>"window"</code> representa a janela do seu navegador e o <code>".value" é usada para obter ou definir o valor de um elemento de formulário</code> 
+                <ul class="modelo-lista-indicador">
+                    <li><b>getElementById('id de uma tag')</b>: seleciona um elemento-tag por um ID: <br>
+                        <code>var name = window.document.getElementById('IdTagInput').value;</code>
+                    </li>
+
+                    <br>
+
+                    <li><b>getElementsByClassName(className):</b> Seleciona todos os elementos com uma determinada classe: <br>
+                        <code>var name = window.document.getElementsByClassName('ClassTag').value;</code>
+                    </li>
+
+                    <br>
+
+                    <li><b>getElementsByTagName(tagName)[x]:</b> Seleciona todos os elementos com uma determinada tag. <br>
+                        <code>var name = window.document.getElementsByTagName('p')[0]; //Nesse caso irá selecionar a primeira tag P que tiver na HTML</code>
+                    </li>
+
+                    <br>
+
+                    <li><b>querySelectorAll(selector):</b> Seleciona todos os elementos que correspondem a um seletor CSS. <br>
+                        var name = window.document.querySelector('.teste'); //Observe que o "." captura os dados de todas as tags que possuir uma classe chamada "teste"; Id = #.
+                    </li>
+                </ul>
+
+                <hr>
+
+                <h1>Inserção de Dados DOM:</h1>
+                <ul class="modelo-lista-indicador">
+                    <li><b>variavelX.innerHTML:</b> insere valores nas tags não desprezando as configurações das tags: <br>
+                        <code>variavelX.innerHTML = "Nome: <ins>Paulo</ins>"; //Na execução, o nome "Paulo" ficará em sublinhado;</code>
+                    </li>
+
+                    <br>
+
+                    <li><b>variavelX.innerText:</b> insere valores nas tags, porém despreza as configurações das tags: <br></li>
+                    <code>variavelX.innerText = "Meu nome é <b>Paulo</b>"; //O nome não ficará em negrito</code>
+
+                    <br>
+
+                    <li><b>variavelX.textContent:</b> insere valores nas tags de para textos, porém despreza as configurações das tags</li>
+                    <code>variavelX.textContent = "Lorem [...]"; //Texto grande!!!</code>
+                </ul>
+
+                <br>
+
+                <h1>Evendos Clássicos DOM:</h1>
+                <ul class="modelo-lista-indicador">
+                    <li><b>mouseenter</b>: disparará um evento quando o mouse passar por cima de algum elemento; </li>
+                    <li><b>mousemove</b>: disparará um evento quando você mover o mouse dentro do elemento, sendo disparado várias vezes; </li>
+                    <li><b>mousedown</b>: disparará um evento quando você clicar e segurar o mouse no elemento; </li>
+                    <li><b>mouseup</b>: disparará um evento quando você soltar o mouse do elemento já clicado; </li>
+                    <li><b>click</b>: disparará um evento quando você simplesmente clicar e soltar rapidamente; </li>
+                    <li><b>mouseout</b>: disparará um evento quando você tirar o mouse no elemento; </li>
+                </ul>
+
+                Obs.: para você inserir um desses eventos, basta adicionar o prefixo "on-" no início desses eventos e 
+                depois, vai em JavaScript. Segue a seguinte estrutura: <br>
+                <br>
+                <code>
+                &lt;button onclick="myFunction()"&gt;&lt;/button&gt; <br>
+                
+                function myFunction(){
+                    //evento onclick...
+                }
+                </code>
+
+                <h2>Outra maneira de inserir um evento:</h2>
+                <ul class="modelo-lista-indicador">
+                    <li><b>variavelporID/CLASSX.addEventListener(evento, função)</b>: método que fará a ligação entre o HTML e o JS. EX: <br>
+                    <br>
+                    <img src="../resources/imgs/imgeventos.png" alt="eventos" id="eventos">
+                    obs.: no addEventListener(), percebe-se que não deve ser adicionado o "on-";
+                    </li>
+                </ul>
+
+            </section>
+        </details>
+
+        <br>
+
+        <details><summary>Laços de Repetições</summary>
+            <section>
+                <h1>Tipos de Laços de repetições:</h1>
+                <ul class="modelo-lista-indicador">
+                    <li><b>for</b>: Estrutura de Repetição com Variável de Controle: Estrutura => <br>
+                    for(inicialização; condição; incremento){//repetição} <br>
+                        <code>for(var count = 1; count &lt;= 10; count++){//execução em 10 vezes}</code>
+                    </li>
+                    <li><b>while</b>: Estrutura de Repetição com um Teste Lógico no Início <br>
+                    <code>while(condicao){//repeticao}</code>
+                    </li>
+                    <li><b>do..while</b>: Estrutura de Repetição com um Teste Lógico no Final <br>
+                    <code>do{repetição}while(condição)</code>
+                    </li>
+                    <li><b>for(declaração in variávelArrayX){bloco-código}</b>: tipo de laço de repetição para elementos Objects e Variáveis Compostas, especificamente. <br> 
+                    <code>for(var count in nomes){console.log(nomes)}//será apresentado todos os nomes da variável "nomes". Significa que para cada contagem de chaves que
+                        estiver na variável nomes, será apresentado os valores da variável nomes.
+                    </code>
+                    </li>
                 </ul>
             </section>
         </details>
 
         <br>
 
-        <details><summary>Captura de dados HTML</summary>
+        <details><summary>Criação de Elementos HTML em JavaScript</summary>
             <section>
-                
+                <h1>Criando Elemento:</h1>
+                <ul class="modelo-lista-indicador">
+                    <li><b>variavelX = document.createElement('nomeTag'): irá criar um elemento</b>: <br></li>
+                    <code>let opcao = document.createElement('option');</code>
+                </ul>
+                <h1>Atribuindo Valor: </h1>
+                <ul class="modelo-lista-indicador">
+                    <li><b>variavelX.text = ""</b>: permite atribuir um valor a um elemento criado no JS <br>
+                    <code>opcao.text = "olá"</code>
+                    </li>
+                </ul>
+                <h1>Atribuindo Elemento-Valor em uma tag HTML:</h1>
+                <ul class="modelo-lista-indicador">
+                    <li><b>variavelY.appendChild(variavelX)</b>: permite atribuir o elemento em outra tag. <br>
+                    <code>elementoSelect.appendChild(opcao) //percebe-se que foi atribuido uma OPTION no SELECT, cujo valor é "olá".</code>
+                    </li>
+                </ul>
+                <h1>Atribuindo ID/Class no ElementoJS</h1>
+                <ul class="modelo-lista-indicador">
+                    <li><code><b>opcao.id = "nomeID"</b></code>: irá atribuir um ID no elementoJS</li>
+                    <li><code><b>opcao.ClassName = "nomeCLASS"</b></code>: irá atribuir uma CLASS no elementoJS</li>
+                    <li>Como observação, caso queira inserir várias classes em um único ElementoJS, você deve inserir <br>
+                    <code><b>opcao.<i>classList.add</i>("Classe1", "Classe2")</b>.</code>.
+                    </li>
+                </ul>
+            </section>
+        </details>
+
+        <br>
+
+        <details><summary>Array/Try...Catch()</summary>
+            <section>
+                <h1>Array: </h1>
+                <ul class="modelo-lista-indicador">
+                    <li>Array é uma variável composta que agupa vários valores por índices/chaves, sendo sua estrutura: <br>
+                    <b>variavelX = [indice1, indice2,]</b>. Ex.: <code>var nomes = ['Paulo', "Sérgio", "Silva"]</code> <br>
+                    É importante lembrar que o índice/chave começa pelo 0, então se você tiver 4 nomes em uma variável Object, terá 3 índices.
+                    Observe que essa variável "num" possui 5 elementos/posições com 5 chaves/índices que vão de 0 a 4.
+                      <div id="estiloArray">
+                          <img src="../resources/imgs/imgArray.png" alt="imgArray"> <br>
+                      </div>
+                </li>
+                <li></li>
+                </ul>
+            </section>
+        </details>
+
+        <br>
+
+        <details><summary>...</summary>
+            <section>
+
+            </section>
+        </details>
+
+        <br>
+
+        <details><summary>...</summary>
+            <section>
+
             </section>
         </details>
 
